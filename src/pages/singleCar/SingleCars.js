@@ -30,7 +30,7 @@ const SingleCars = () => {
         
         data.email = user?.email;
         data.status = "pending";
-        fetch("http://localhost:5000/addOrders", {
+        fetch("https://desolate-brushlands-79474.herokuapp.com/addOrders", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),
@@ -41,7 +41,7 @@ const SingleCars = () => {
         alats()
       };
     useEffect(()=>{
-        fetch(`http://localhost:5000/singleCars/${carsId}`)
+        fetch(`https://desolate-brushlands-79474.herokuapp.com/singleCars/${carsId}`)
         .then(res => res.json())
         .then(data => setCars(data));
     },[])
