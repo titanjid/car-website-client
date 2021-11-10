@@ -44,13 +44,13 @@ const LogIn = () => {
             const user = userCredential.user;
             setUser(user)
             history.push(redirect_uri);
+            alats()
           })
           .catch((error) => {
             const errorMessage = error.message;
             setError(errorMessage)
           });
          setError('')
-         alats()
         e.preventDefault()
 
     }

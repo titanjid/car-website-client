@@ -53,6 +53,7 @@ const Register = () => {
             updateName(name)
             const user = userCredential.user;
             setUser(user)
+            alats()
             history.push(redirect_uri)
           })
           .catch((error) => {
@@ -61,7 +62,6 @@ const Register = () => {
           });
 
          setError('')
-         alats()
         e.preventDefault()
 
     }

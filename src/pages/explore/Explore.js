@@ -6,7 +6,7 @@ import SingleExplore from './SingleExplore';
 const Explore = () => {
     const [exploreCars,setExploreCars]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/exploreCars')
+        fetch('https://desolate-brushlands-79474.herokuapp.com/exploreCars')
         .then(res => res.json())
         .then(data=>setExploreCars(data));
     },[])

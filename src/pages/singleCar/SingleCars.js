@@ -1,23 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-
 import Footer from '../Home/Footer/Footer';
 import Header from './../Home/Header/Header';
-import useAuth from './../Hooks/useAuth';
 import { useForm } from 'react-hook-form';
+import useAuth from './../Hooks/useAuth';
 import Swal from 'sweetalert2/dist/sweetalert2.all.js';
 
-const SingleCar = () => {
-    const {carId}=useParams()
-    const [car,setCar]=useState({})
-    const {user}=useAuth()
-
-
-    const {
-        register,
-        handleSubmit,
-      } = useForm();
-      const alats=()=>{
+const SingleCars = () => {
+    
+      const {user}=useAuth()
+    const {carsId}=useParams()
+    const [cars,setCars]=useState({})
+    const alats=()=>{
         Swal.fire({
             title: 'your order has been successful',
             showClass: {
@@ -28,7 +22,12 @@ const SingleCar = () => {
             }
           })
     }
-      const onSubmit = (data) => {
+    const {
+        register,
+        handleSubmit,
+      } = useForm();
+    const onSubmit = (data) => {
+        
         data.email = user?.email;
         data.status = "pending";
         fetch("http://localhost:5000/addOrders", {
@@ -42,44 +41,45 @@ const SingleCar = () => {
         alats()
       };
     useEffect(()=>{
-        fetch(`http://localhost:5000/singleCar/${carId}`)
+        fetch(`http://localhost:5000/singleCars/${carsId}`)
         .then(res => res.json())
-        .then(data => setCar(data));
+        .then(data => setCars(data));
     },[])
     return (
         <div>
             <Header></Header>
-            <h2>Details of:{car?.name}</h2>
+            <h2>Details of:{cars?.name}</h2>
             <div className="row row-cols-1 row-cols-md-3 g-4 mb-5 me-0">
             <div className="col ">
             <div className="card">
-            <img src={car?.img} className="card-img-top" alt="..."/>
+            <img src={cars?.img} className="card-img-top" alt="..."/>
             <div className="card-body">
-                <h5 className="card-title">Name: {car?.name}</h5>
-                <p className="card-text">Price: {car?.price}</p>
-                <p className="card-text">{car?.details}</p>
+                <h5 className="card-title">Name: {cars?.name}</h5>
+                <p className="card-text">Price: {cars?.price}</p>
+                <p className="card-text">{cars?.details}</p>
             </div>
             </div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
+              
 
-        <input
-              {...register("email")}
-              value={user?.email}
+              <input
+                {...register("email")}
+                value={user?.email}
                 placeholder="Description"
                 className="p-2 m-2 w-100 input-field"
               />
-
               <input
                 {...register("name")}
                 placeholder="Name"
-                value={car?.name}
+                value={cars?.name}
                 className="p-2 m-2 w-100 input-field"
               />
+
               <input
                 {...register("price", { required: true })}
                 placeholder="Price"
-                value={car?.price}
+                value={cars?.price}
                 className="p-2 m-2 w-100 input-field"
               />
 
@@ -95,4 +95,4 @@ const SingleCar = () => {
     );
 };
 
-export default SingleCar;
+export default SingleCars;
