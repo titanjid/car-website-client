@@ -1,0 +1,62 @@
+[
+    {
+        "name":"McLaren Speedtail",
+        "img":"https://www.cnet.com/a/img/otjFyCpiBh0IWpIJkvCycNOy6X0=/1200x675/2021/04/27/abbf6dd8-ed41-4330-bc43-5ade791436f5/ogi1-mclaren-620r-046.jpg",
+        "price":"$70000",
+        "details":"Rated at 610 horsepower, the 2021 620R is the most powerful Sports Series vehicle ever created. It's also the quickest, but it lags behind its siblings when it comes to top speed. With production limited to 350 units, the 2021 McLaren 620R costs almost $300,000."
+    },
+    {
+        "name":"Bugatti Veyron",
+        "img":"https://www.elitetraveler.com/wp-content/uploads/2012/12/bugatti-veyron-super-sport-.jpg",
+        "price":"$60000",
+        "details":"Since its launch in 2005, the Bugatti Veyron has been regarded as a supercar of superlative quality. ... The Veyron is the first – and the only – supercar to be developed and constructed with a series configuration that can master any driving scenario at any time"
+    },
+    {
+        "name":"SSC Ultimate Aero",
+        "img":"https://c4.wallpaperflare.com/wallpaper/454/434/508/vehicles-ssc-ultimate-aero-wallpaper-preview.jpg",
+        "price":"$50000",
+        "details":"A two-way maximum of 257.41mph made the SSC Aero 'officially' the world's fastest production car – beating the regular Bugatti Veyron – at least for a couple of years until the Veyron Super Sport arrived."
+    },
+    {
+        "name":"Koenigsegg Agera R",
+        "img":"https://cdn.motor1.com/images/mgl/kXy8x/s1/koenigsegg-agera-rsn-for-sale-makes-bugattis-seem-affordable-by-comparison.jpg",
+        "price":"$80000",
+        "details":"It was named Hypercar of the Year in 2010 by Top Gear magazine. The Agera RS variant became the world's fastest production car in 2017, setting a record with a GPS-verified two-way average top speed of 447 km/h (278 mph) and a fastest straight-line speed of 458 km/h (285 mph)."
+    },
+    {
+        "name":"Bugatti Chiron",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/6/63/FoS20162016_0624_132444AA_%2827785299372%29.jpg",
+        "price":"$40000",
+        "details":"“La Voiture Noire” is valued at a staggering $18 million USD, claiming the title for the most expensive new car ever made. The owner of the one-off hypercar has yet to be officially revealed but there has been speculation that it was bought by former VW Group chairman Ferdinand Piech."
+    },
+    {
+        "name":"Bugatti Veyron Super Sport",
+        "img":"https://www.bugatti.com/fileadmin/_processed_/sei/p63/se-image-ce40627babaa7b180bc3dedd4354d61c.jpg",
+        "price":"$90000",
+        "details":"The Bugatti Veyron EB 16.4 is a mid-engine sports car, designed and developed in France by the Volkswagen Group and Bugatti and manufactured in Molsheim, France, by French automobile manufacturer Bugatti. It was named after the racing driver Pierre Veyron."
+    },
+    {
+        "name":"Hennessey Venom GT",
+        "img":"https://i.pinimg.com/originals/38/0a/4a/380a4a58245126565b3647e77602d04b.jpg",
+        "price":"$10000",
+        "details":"The Venom F5 is an all-new hypercar designed and built from the ground up with one goal in mind: To be the absolute fastest road car on earth. Hennessey and team have developed a completely new design, chassis and carbon fiber body focused on aerodynamics to achieve the lowest possible drag."
+    },
+    {
+        "name":"Koenigsegg Agera RS",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/0/0a/2015_Koenigsegg_Agera_N_%2819886243212%29.jpg",
+        "price":"$20000",
+        "details":"Availability in the United States. Due to the car's design and limited production numbers, the Koenigsegg Agera has a retail price of $1.5 million. ... While owning an Agera in the U.S. is not illegal, the car does not meet certain federal standards."
+    },
+    {
+        "name":" Lamborghini Aventador SVJ",
+        "img":"https://c4.wallpaperflare.com/wallpaper/457/624/878/lamborghini-lamborghini-aventador-svj-car-red-car-wallpaper-preview.jpg",
+        "price":"$30000",
+        "details":"Limited to a mere 800 examples, the SVJ Roadster is the most iconic form of the Aventador family. Its Lamborghini aerodynamics represent the most futuristic ever designed: the ALA 2.0 system and aero-vectoring ensure the minimum drag on straightaways."
+    },
+    {
+        "name":"Audi R8 Performance",
+        "img":"https://www.topcarrating.com/audi-2/2019-audi-r8-v10.jpg",
+        "price":"$9000",
+        "details":"The Audi R8 has 4 trims, all of which can reach a maximum speed of 200mph. Its more sporty trims such as the Performance Spyder and the Performance Coupe can go even faster. ... Those who enjoy speed can try our Audi R8 Spyder and whizz through the glamorous."
+    }
+]
