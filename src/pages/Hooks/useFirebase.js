@@ -7,10 +7,11 @@ initializeFirebaseApp()
 
 const useFirebase = ()=>{
 
-    const [user,setUser]=useState()
+    const [user,setUser]=useState({});
     const [loding,setLoding]=useState(true);
-    const [error,setError]=useState('')
-    const auth=getAuth()
+    const [isAdmin,setIsAdmin]=useState(false);
+    const [error,setError]=useState('');
+    const auth=getAuth();
 
     const createAccountWithEmailAndPassword =(email,password)=>{
         return createUserWithEmailAndPassword(auth, email, password)
@@ -24,11 +25,8 @@ const useFirebase = ()=>{
             displayName:name
           }).then(() => {
             window.location.reload()
-            // Profile updated!
-            // ...
           }).catch((error) => {
-            // An error occurred
-            // ...
+
           });
     }
     const logOut = () => {
@@ -38,6 +36,12 @@ const useFirebase = ()=>{
             })
     }
 
+
+    useEffect(()=>{
+        fetch(`http://localhost:5000/user/${user.email}`)
+        .then(res => res.json())
+        .then(data=> setIsAdmin(data.admin));
+    },[user.email])
     useEffect(() => {
         onAuthStateChanged(auth, user => {
             if (user) {
@@ -49,6 +53,19 @@ const useFirebase = ()=>{
                 setLoding(false)
                 })
             }, [])
+
+            const saveUser = (email, name) => {
+                const user = { email, name };
+                fetch('http://localhost:5000/users', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(user)
+                })
+                    .then()
+            }
+
     return {
         user,
         setUser,
@@ -58,7 +75,9 @@ const useFirebase = ()=>{
         setError,
         singIn,
         logOut,
-        updateName
+        updateName,
+        saveUser,
+        isAdmin
     }
 }
 

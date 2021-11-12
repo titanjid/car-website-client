@@ -27,7 +27,6 @@ const SingleCars = () => {
         handleSubmit,
       } = useForm();
     const onSubmit = (data) => {
-        
         data.email = user?.email;
         data.status = "pending";
         fetch("https://desolate-brushlands-79474.herokuapp.com/addOrders", {
@@ -37,7 +36,6 @@ const SingleCars = () => {
         })
           .then((res) => res.json())
           .then((result) => console.log(result));
-        console.log(data);
         alats()
       };
     useEffect(()=>{
@@ -61,8 +59,6 @@ const SingleCars = () => {
             </div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-              
-
               <input
                 {...register("email")}
                 value={user?.email}
@@ -70,7 +66,13 @@ const SingleCars = () => {
                 className="p-2 m-2 w-100 input-field"
               />
               <input
-                {...register("name")}
+              {...register("userName", { required: true })}
+              value={user?.displayName}
+                placeholder="Use-name"
+                className="p-2 m-2 w-100 input-field"
+              />
+              <input
+                {...register("name", { required: true })}
                 placeholder="Name"
                 value={cars?.name}
                 className="p-2 m-2 w-100 input-field"

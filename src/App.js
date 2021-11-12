@@ -10,6 +10,7 @@ import LogIn from './pages/LogIn/LogIn';
 import PrivateRoute from './pages/privateRoute/PrivateRoute';
 import SingleCar from './pages/singleCar/SingleCar';
 import SingleCars from './pages/singleCar/SingleCars';
+import Dashboard  from './pages/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <PrivateRoute exact path="/singleCar/:carId">
           <SingleCar></SingleCar>
+        </PrivateRoute>
+        <PrivateRoute  path="/dashboard">
+          <Dashboard></Dashboard>
         </PrivateRoute>
         <PrivateRoute  path="/singleCars/:carsId">
           <SingleCars></SingleCars>

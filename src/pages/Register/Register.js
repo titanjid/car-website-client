@@ -13,7 +13,7 @@ const Register = () => {
     const [password,setPassword]=useState()
     const location = useLocation();
     const history = useHistory();
-    const {updateName,createAccountWithEmailAndPassword,setError,error,setUser}=useAuth()
+    const {saveUser,updateName,createAccountWithEmailAndPassword,setError,error,setUser}=useAuth()
 
 
     const redirect_uri=location.state?.from ||'/home';
@@ -53,6 +53,7 @@ const Register = () => {
             updateName(name)
             const user = userCredential.user;
             setUser(user)
+            saveUser(email,name)
             alats()
             history.push(redirect_uri)
           })

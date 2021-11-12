@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
 
                 <p className="mt-5">
-                  <small> © . All rights reserved.</small>
+                  <small> ©All rights reserved.</small>
                 </p>
               </div>
             </div>
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
             <div className="col-md-5">
               <div className="right-footer-container">
-                <h3>Sign up Now</h3>
+                <h3>Sign up</h3>
                 <input
                   className="footer-input"
                   type="text"
@@ -65,7 +65,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faPhoneVolume} />
                   </div>
                   <div>
-                    <h5>+01254525562</h5>
+                    <h5>01821554444</h5>
                   </div>
                 </div>
                 <div className="map d-flex align-items-center justify-content-center">

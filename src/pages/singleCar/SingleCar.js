@@ -66,14 +66,20 @@ const SingleCar = () => {
         <input
               {...register("email")}
               value={user?.email}
-                placeholder="Description"
+                placeholder="email"
+                className="p-2 m-2 w-100 input-field"
+              />
+        <input
+              {...register("userName", { required: true })}
+              value={user?.name}
+                placeholder="Use-name"
                 className="p-2 m-2 w-100 input-field"
               />
 
               <input
-                {...register("name")}
+                {...register("name", { required: true })}
                 placeholder="Name"
-                value={car?.name}
+                value={car.name}
                 className="p-2 m-2 w-100 input-field"
               />
               <input
