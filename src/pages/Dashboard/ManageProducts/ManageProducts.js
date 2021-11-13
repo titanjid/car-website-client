@@ -3,14 +3,14 @@ import React,{useEffect, useState} from 'react';
 const ManageProducts = () => {
     const [products,setProducts]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/exploreCar')
+        fetch('https://desolate-brushlands-79474.herokuapp.com/exploreCar')
         .then(res=> res.json())
         .then(data => setProducts(data));
     },[])
     const handleDeleteProduct=(id)=>{
         const cancleConfirm =window.confirm("Can you Delete your Product?")
          if(cancleConfirm){
-             fetch(`http://localhost:5000/exploreCar/${id}`, {
+             fetch(`https://desolate-brushlands-79474.herokuapp.com/exploreCar/${id}`, {
              method: "DELETE"
          })
          

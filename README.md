@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Car Bazar.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+my website:https://car-bazar-a8c36.web.app/
 
-## Available Scripts
+## My Best Car
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `McLaren Speedtail`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Rated at 610 horsepower, the 2021 620R is the most powerful Sports Series vehicle ever created. It's also the quickest, but it lags behind its siblings when it comes to top speed. With production limited to 350 units, the 2021 McLaren 620R costs almost $300,000.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Bugatti Veyron`
 
-### `npm run build`
+Since its launch in 2005, the Bugatti Veyron has been regarded as a supercar of superlative quality. ... The Veyron is the first – and the only – supercar to be developed and constructed with a series configuration that can master any driving scenario at any time
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `SSC Ultimate Aero`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A two-way maximum of 257.41mph made the SSC Aero 'officially' the world's fastest production car – beating the regular Bugatti Veyron – at least for a couple of years until the Veyron Super Sport arrived.
+### `Koenigsegg Agera R`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+It was named Hypercar of the Year in 2010 by Top Gear magazine. The Agera RS variant became the world's fastest production car in 2017, setting a record with a GPS-verified two-way average top speed of 447 km/h (278 mph) and a fastest straight-line speed of 458 km/h (285 mph).
 
-### `npm run eject`
+### `Bugatti Chiron`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+“La Voiture Noire” is valued at a staggering $18 million USD, claiming the title for the most expensive new car ever made. The owner of the one-off hypercar has yet to be officially revealed but there has been speculation that it was bought by former VW Group chairman Ferdinand Piech.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `About Our Car Bazar.com`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**We have here the most popular cars in the world. You can buy the car according to your wishes.Our company is trustworthy enough you can buy your product without any doubt and on time delivery.Or you can see the car in front of our shop and buy it.!**

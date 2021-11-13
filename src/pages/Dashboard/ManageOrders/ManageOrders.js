@@ -16,7 +16,7 @@ const ManageOrders = () => {
     }
     const handleManageOrders=(id)=>{
         const {status}=manageOrders
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://desolate-brushlands-79474.herokuapp.com/orders/${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(status),
@@ -32,7 +32,7 @@ const ManageOrders = () => {
     }
 
     useEffect(()=>{
-        fetch("http://localhost:5000/orders")
+        fetch("https://desolate-brushlands-79474.herokuapp.com/orders")
         .then(res => res.json())
         .then(data => setManageOrders(data))
     },[])
