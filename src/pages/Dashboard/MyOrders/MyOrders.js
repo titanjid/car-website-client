@@ -10,7 +10,7 @@ const MyOrders = () => {
     const handleCancelOrders=(id)=>{
        const cancleConfirm =window.confirm("Can you cancle your order?")
         if(cancleConfirm){
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://desolate-brushlands-79474.herokuapp.com/orders/${id}`, {
             method: "DELETE"
         })
         
@@ -25,7 +25,7 @@ const MyOrders = () => {
         })};
     }
     useEffect(()=>{
-        fetch(`http://localhost:5000/orders/${user.email}`)
+        fetch(`https://desolate-brushlands-79474.herokuapp.com/orders/${user.email}`)
         .then(res => res.json())
         .then(data => setOrderCars(data))
     },[user.email])

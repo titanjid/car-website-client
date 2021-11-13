@@ -71,7 +71,7 @@ const SingleCar = () => {
               />
         <input
               {...register("userName", { required: true })}
-              value={user?.name}
+              value={user?.displayName}
                 placeholder="Use-name"
                 className="p-2 m-2 w-100 input-field"
               />

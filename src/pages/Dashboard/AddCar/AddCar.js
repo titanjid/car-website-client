@@ -17,7 +17,7 @@ const AddCar = () => {
           })
     }
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/addCar", {
+        fetch("https://desolate-brushlands-79474.herokuapp.com/addCar", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

@@ -25,6 +25,8 @@ import useAuth from './../Hooks/useAuth';
 import AdminRoute from './../AdminRoute/AdminRoute';
 import Review from './Review/Review';
 import Button from '@restart/ui/esm/Button';
+import ManageProducts from './ManageProducts/ManageProducts';
+import ManageOrders from './ManageOrders/ManageOrders';
 
 
 const drawerWidth = 240;
@@ -57,6 +59,12 @@ function Dashboard(props) {
           </ListItem>
           <ListItem >
                <Link to={`${url}/addCar`} className="text-decoration-none">AddCar</Link>
+          </ListItem>
+          <ListItem >
+               <Link to={`${url}/manageProducts`} className="text-decoration-none">ManageProducts</Link>
+          </ListItem>
+          <ListItem >
+               <Link to={`${url}/manageOrders`} className="text-decoration-none">ManageOrders</Link>
           </ListItem>
           </Box>
           }
@@ -142,6 +150,12 @@ function Dashboard(props) {
                     </AdminRoute>
                     <AdminRoute path={`${path}/addCar`}>
                         <AddCar></AddCar>
+                    </AdminRoute>
+                    <AdminRoute path={`${path}/manageProducts`}>
+                        <ManageProducts></ManageProducts>
+                    </AdminRoute>
+                    <AdminRoute path={`${path}/manageOrders`}>
+                        <ManageOrders></ManageOrders>
                     </AdminRoute>
                     <Route path={`${path}/pay`}>
                         <Pay></Pay>
